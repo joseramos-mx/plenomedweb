@@ -8,6 +8,9 @@ import Hero from "@/components/Hero"
 import Bento from "@/components/Bento"
 import Pilares from "@/components/pilares"
 import CTA from "@/components/cta"
+import TeamSection from "@/components/team"
+import TestimonialVideo from "@/components/testimonial"
+import WhatsAppFloat from "@/components/whatsappfloat"
 
 
 export default function Home() {
@@ -28,56 +31,23 @@ export default function Home() {
       <div className="mt-10 p-4">
         <Bento/>
       </div>
-     
+      <div>
+        <TeamSection/>
+      </div>
 
       <main className="flex-1 pt-19 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-[#0a241f] to-[#134137]">
-
-        {/* Testimonials */}
-        <section
-          id="testimonios"
-          className="py-8 sm:py-12 md:py-20 bg-[#0a241f] -mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8"
-        >
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#effaf5]">
-              "Historias reales. Cambios reales."
-            </h2>
-
-            <div className="bg-[#134137] rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <div className="bg-[#1a6855] rounded-full h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center mr-3 sm:mr-4">
-                    <span className="text-[#84d1b6] font-medium text-sm sm:text-base">5.0</span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm sm:text-base text-[#effaf5]">Calificaciones de Google</p>
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
-                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#164f41] rounded-lg p-6 sm:p-8 text-center">
-              <button className="inline-flex items-center justify-center bg-[#2e9b7b] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg font-medium hover:bg-[#1f7c63] transition-colors">
-                <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Reproducir video testimonio
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
+        <div className="pb-10 w-full max-w-4xl mx-auto space-y-10">
+          <TestimonialVideo/>        
+          
+       {/* FAQ */}
+        </div>
         <section
           id="preguntas"
-          className="py-8 sm:py-12 md:py-20 bg-[#134137] -mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8"
+          className="py-8 sm:py-12 md:py-20 bg-white -mx-4 md:-mx-6 lg:-mx-8 px-4 md:px-6 lg:px-8"
         >
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#effaf5]">
-              "Lo que más nos preguntan"
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#134137]">
+              Lo que más nos preguntan
             </h2>
 
             <div className="space-y-3 sm:space-y-4">
@@ -120,7 +90,7 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#effaf5]">
-              "¿Listo para el cambio que mereces?"
+              ¿Listo para el cambio que mereces?
             </h2>
             <p className="text-base sm:text-lg text-[#b5e5d1] mb-6 sm:mb-8 max-w-2xl mx-auto">
               Si llevas tiempo sintiéndote igual… es hora de hacer algo diferente. En Plenomed, no solo cuidamos tu
@@ -153,32 +123,13 @@ export default function Home() {
                 Tel: (123) 456-7890
               </p>
             </div>
-            <div className="sm:col-span-2 md:col-span-1">
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-[#51b695]">Enlaces</h3>
-              <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 text-sm sm:text-base text-[#b5e5d1]">
-                <li>
-                  <Link href="#como-funciona" className="hover:text-[#51b695] transition-colors">
-                    Cómo Funciona
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#testimonios" className="hover:text-[#51b695] transition-colors">
-                    Testimonios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#preguntas" className="hover:text-[#51b695] transition-colors">
-                    Preguntas Frecuentes
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="border-t border-[#164f41] mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-[#84d1b6]">
             <p>© {new Date().getFullYear()} Plenomed. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
+      <WhatsAppFloat />
     </div>
   )
 }

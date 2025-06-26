@@ -107,6 +107,18 @@ export default function Navigation() {
               >
                 Preguntas Frecuentes
               </Link>
+                            <Link
+                href="#equipo"
+                className="text-sm font-medium text-gray-600 hover:text-teal-500 transition-colors"
+                onClick={() => {
+                  const mobileMenu = document.getElementById("mobile-menu")
+                  if (mobileMenu) {
+                    mobileMenu.classList.add("hidden")
+                  }
+                }}
+              >
+                Equipo
+              </Link>
               <Link
                 href="#contacto"
                 className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors inline-block w-fit"
@@ -118,18 +130,6 @@ export default function Navigation() {
                 }}
               >
                 Contactar
-              </Link>
-              <Link
-                href="#equipo"
-                className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors inline-block w-fit"
-                onClick={() => {
-                  const mobileMenu = document.getElementById("mobile-menu")
-                  if (mobileMenu) {
-                    mobileMenu.classList.add("hidden")
-                  }
-                }}
-              >
-                Equipo
               </Link>
             </nav>
           </div>

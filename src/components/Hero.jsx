@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export default function Hero() {
   return (
     <div
-      className="w-screen h-screen bg-[url('/fondo.jpg')] bg-cover bg-top px-4 sm:px-6 lg:px-30 text-[#0a241f] flex flex-col items-start justify-center text-left"
+      className="w-screen h-screen bg-[url('/fondo.png')] bg-cover bg-top px-4 sm:px-6 lg:px-30 text-[#0a241f] flex flex-col items-start justify-center text-left"
     >
         
       <div className="bg-white backdrop-blur-sm p-10 rounded-xl max-w-3xl">
