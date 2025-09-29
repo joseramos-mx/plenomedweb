@@ -15,6 +15,8 @@ export default function TestimonialVideo() {
   }
 
   return (
+    <section id="testimonios" className="py-8 sm:py-12 md:py-20">
+      
     <div className="relative">
       {!isVideoVisible ? (
         // Vista previa del video
@@ -30,7 +32,7 @@ export default function TestimonialVideo() {
               </div>
               <h3 className="text-white text-xl sm:text-2xl font-bold mb-2 text-center">Testimonio: Caso de Éxito</h3>
               <p className="text-white/80 text-sm sm:text-base text-center max-w-md">
-                Descubre cómo María logró revertir su diabetes tipo 2 en solo 3 meses
+                Descubre cómo el Sr. Alonso logró revertir su diabetes tipo 2 y bajar su HaB1c de 11 a 5 en solo 3 meses
               </p>
             </div>
 
@@ -68,12 +70,13 @@ export default function TestimonialVideo() {
           <div className="p-4 sm:p-6">
             <h3 className="text-white text-lg sm:text-xl font-bold mb-2">"Mi vida cambió completamente"</h3>
             <p className="text-[#b5e5d1] text-sm sm:text-base">
-              Alonso, 52 años - Logró revertir su diabetes tipo 2 kg en 3 meses siguiendo nuestro programa
+              Alonso, 52 años - Logró revertir su diabetes tipo 2 en 3 meses siguiendo nuestro programa
               personalizado.
             </p>
           </div>
         </div>
       )}
     </div>
+    </section>
   )
 }

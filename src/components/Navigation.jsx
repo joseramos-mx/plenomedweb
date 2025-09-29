@@ -59,7 +59,7 @@ export default function Navigation() {
 
           <div className="hidden md:block">
             <Link
-              href="#contacto"
+              href="https://wa.me/6182991002?text=¡Hola!%20Me%20interesa%20conocer%20más%20sobre%20los%20programas%20de%20Plenomed%20para%20el%20control%20de%20la%20diabetes.%20¿Podrían%20brindarme%20más%20información?"
               className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
             >
               Comenzar ahora

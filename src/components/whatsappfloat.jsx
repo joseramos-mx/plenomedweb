@@ -30,7 +30,7 @@ export default function WhatsAppFloat() {
   }, [isVisible])
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890" // Reemplazar con el número real
+    const phoneNumber = "6182991002" // Reemplazar con el número real
     const message = encodeURIComponent(
       "¡Hola! Me interesa conocer más sobre los programas de Plenomed para el control de la diabetes. ¿Podrían brindarme más información?"
     )

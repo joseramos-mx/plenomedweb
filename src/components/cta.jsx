@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function CTA() {
   return (
-    <section className="px-4 py-16 md:py-24 relative overflow-hidden bg-white]">
+    <section id="como-funciona" className="px-4 py-16 md:py-24 relative overflow-hidden bg-white]">
       {/* Fondo decorativo */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a241f] to-[#134137] -z-10"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-10 -z-10">
@@ -102,7 +102,7 @@ export default function CTA() {
           {/* Botón CTA */}
           <div className="mt-8 text-center">
             <Link
-              href="#contacto"
+              href="https://wa.me/6182991002?text=¡Hola!%20Me%20interesa%20conocer%20más%20sobre%20los%20programas%20de%20Plenomed%20para%20el%20control%20de%20la%20diabetes.%20¿Podrían%20brindarme%20más%20información?"
               className="inline-flex items-center justify-center bg-white text-[#134137] hover:bg-[#51b695] px-6 py-3 rounded-full text-lg font-medium transition-colors"
             >
               <Check className="mr-2 h-5 w-5" /> Quiero comenzar

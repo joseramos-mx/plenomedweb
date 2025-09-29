@@ -57,7 +57,7 @@ export default function TeamSection() {
   const teamMembers = [
     {
       name: "Dr. Jesús Ramos",
-      role: "Especialista en Medicina del Estilo de Vida",
+      role: "Especialista en Medicina del Estilo de Vida | Miembro de la American College of Lifestyle Medicine",
       image: "/drjesus.png?height=600&width=450&text=Dra.MS",
       bio: "Con más de 10 años de experiencia, El Dr. Jesús Ramos ha ayudado a cientos de pacientes a revertir su diabetes tipo 2 a través de cambios en el estilo de vida y nutrición personalizada.",
     },
@@ -86,6 +86,12 @@ export default function TeamSection() {
             expertos en medicina del estilo de vida
           </p>
         </div>
+        <div className="mb-8 text-center flex justify-center grayscale-100 items-center">
+          <div>
+            <img src="/ACLM.png" alt="" className="h-20 my-[-40]"/>
+          </div>
+        </div>
+        
 
         {/* Contenedor de tarjetas con navegación */}
         <div className="relative max-w-6xl mx-auto bg">

@@ -12,13 +12,18 @@ import TeamSection from "@/components/team"
 import TestimonialVideo from "@/components/testimonial"
 import WhatsAppFloat from "@/components/whatsappfloat"
 
+const phoneNumber = "6182991002" // Reemplazar con el número real
+const message = encodeURIComponent(
+      "¡Hola! Me interesa conocer más sobre los programas de Plenomed para el control de la diabetes. ¿Podrían brindarme más información?"
+    )
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <div className="">
       <Navigation/>
-      </div>
+      </div>4
       <div className=" overflow-hidden ">
         <Hero/>
       </div>
@@ -28,9 +33,7 @@ export default function Home() {
       <div>
         <Pilares/>
       </div>
-      <div className="mt-10 p-4">
-        <Bento/>
-      </div>
+
       <div>
         <TeamSection/>
       </div>
@@ -96,10 +99,14 @@ export default function Home() {
               Si llevas tiempo sintiéndote igual… es hora de hacer algo diferente. En Plenomed, no solo cuidamos tu
               salud. Te damos herramientas reales para vivir mejor.
             </p>
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center bg-[#2e9b7b] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-md text-base sm:text-xl font-medium hover:bg-[#1f7c63] transition-colors"
-            >
+
+            {/* Botón */}
+    <Link
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center bg-[#2e9b7b] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-md text-base sm:text-xl font-medium hover:bg-[#1f7c63] transition-colors"
+    >
               <span className="mr-2">💬</span> Agenda tu primera valoración
             </Link>
           </div>
@@ -118,9 +125,9 @@ export default function Home() {
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-[#51b695]">Contacto</h3>
               <p className="text-sm sm:text-base text-[#b5e5d1]">
-                info@plenomed.com
+                dr.jesusramos@plenomed.com.mx
                 <br />
-                Tel: (123) 456-7890
+                Tel: (618) 299-1002
               </p>
             </div>
           </div>
