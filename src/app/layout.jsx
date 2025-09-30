@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
+import Analytics from "./Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 const GA_ID = "AW-17577841108"; // o usa process.env.NEXT_PUBLIC_GA_ID
