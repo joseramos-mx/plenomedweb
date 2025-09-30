@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Suspense } from "react";
 import Script from "next/script";
 import Analytics from "./Analytics";
 
@@ -41,7 +42,10 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Analytics />
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
+          
           {children}
         </ThemeProvider>
       </body>
