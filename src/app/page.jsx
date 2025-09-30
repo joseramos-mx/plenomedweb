@@ -93,7 +93,7 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-4xl text-center">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#effaf5]">
-              ¿Listo para el cambio que mereces?
+              ¿Listo para el cambio que te mereces?
             </h2>
             <p className="text-base sm:text-lg text-[#b5e5d1] mb-6 sm:mb-8 max-w-2xl mx-auto">
               Si llevas tiempo sintiéndote igual… es hora de hacer algo diferente. En Plenomed, no solo cuidamos tu
