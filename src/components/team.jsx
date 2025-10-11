@@ -56,7 +56,7 @@ const TeamMember = ({ name, role, image, bio }) => {
 export default function TeamSection() {
   const teamMembers = [
     {
-      name: "Dr. Jesús Ramos",
+      name: "Jesús Ramos",
       role: "Especialista en Medicina del Estilo de Vida | Miembro de la American College of Lifestyle Medicine",
       image: "/drjesus.png?height=600&width=450&text=Dra.MS",
       bio: "Con más de 10 años de experiencia, El Dr. Jesús Ramos ha ayudado a cientos de pacientes a revertir su diabetes tipo 2 a través de cambios en el estilo de vida y nutrición personalizada.",

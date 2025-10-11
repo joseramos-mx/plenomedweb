@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 const GA_ID = "AW-17577841108"; // o usa process.env.NEXT_PUBLIC_GA_ID
 
 export const metadata = {
-  title: "Plenomed - Consulta de Estilo de Vida para Diabetes",
+  title: "Jesús Ramos | Plenomed - Consulta de Estilo de Vida para Diabetes",
   description:
     "En Plenomed transformamos tu salud desde la raíz, con medicina del estilo de vida, ciencia de precisión y un enfoque humano.",
   keywords:
